@@ -1,5 +1,6 @@
 **.DS_Store
 **/.vs/
 **/.idea
+**/.ini
 **/.vscode
 **/node_modules
