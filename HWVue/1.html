@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+
+        <!-- Певрое задание -->
+        <button @click="reverseText">{{ btnText }}</button>
+    
+        <!-- Второе задание -->
+        <ul v-for="(el,index) in elList" :key="elList.id">
+            <li>{{ el.text }} {{el.id}}</li>
+            <!-- Третье задание -->
+            <button @click="removeList(index)">Удалить элемент списка</button>
+        </ul>
+        <button @click="addElList">Добавить новый элемент списка</button>
+
+    </div>
+    <script defer>
+        new Vue({
+            el: '#app',
+            data: {
+                btnText: "Перевернуть",
+                coutner: 1,
+                elList: []
+            },
+            methods: {
+                reverseText(){
+                    this.btnText = [...this.btnText].reverse().join('');
+                },
+                addElList(){
+                    this.elList.push(
+                        {   
+                            id: this.coutner++,
+                            text: "Новый элемент списка"
+                        }
+                    );
+                },
+                removeList(index){
+                    console.log(index);
+                    this.elList.splice(index, 1);
+                },
+            },
+        })
+    </script>
+</body>
+</html>
