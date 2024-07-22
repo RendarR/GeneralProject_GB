@@ -5,151 +5,193 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interno</title>
-    <link rel="stylesheet" href="./src/layout/style/style.css">
+    <link rel="stylesheet" href="./src/layout/style/main.css">
 </head>
 <body>
-    <div class="conteiner">
-        <header>
+    <header class="center container">
+        <a href="#" class="logo__logo">
+            <img class="logo__img" src="./src/assets//img/logo.png" alt="">
+            <h3 class="logo__h3">Interno</h3>
+        </a>
+        <nav class="header__right hidden-mobile">
+            <a href="#" class="header__a header__menu-link">Домой</a>
+            <a href="#" class="header__a">Проект</a>
+            <a href="#" class="header__a">Блог</a>
+        </nav>
+        <button class="header__burger-menu burger-button visible-mobile" type="button">
+            <span class="visually-hidden">Open navigation menu</span>
+        </button>
+    </header>
+    <main class="center">
+        <section class="banner container">
+            <div class="banner__content">
+                <h2 class="banner__tittle">Пусть ваш дом будет уникальным</h2>
+                <div class="banner__textContent">Существует много вариаций Lorem Ipsum, которые можно использовать</div>
+                <button class="btn__dark"><span>Начать</span><img src="./src/assets/img/vector.png" alt=""></button>
+            </div>
+        </section>
+        <section class="main__content container">
+            <header class="main__content__heading">
+                <h3 class="main__content__h3">Следите за нашими проектами</h3>
+                <p class="main__content__p">Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы </p>
+            </header>
+            <main class="main__content__products">
+                <article class="product main__content-left">
+                    <img class="product__img" src="./src/assets/img/item1.png" alt="">
+                    <div class="product__footer">
+                        <div class="product__footer-left">
+                            <h4 class="product__footer-h3">Современная кухня</h4>
+                            <p class="product__footer-p">Двор / Планировка</p>
+                        </div>
+                        <div class="product__footer-right">
+                            <button class="product__circul">></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product main__content-right">
+                    <div class="product main__content-left">
+                        <img class="product__img" src="./src/assets/img/item2.png" alt="">
+                        <div class="product__footer">
+                            <div class="product__footer-left">
+                                <h4 class="product__footer-h3">Современная кухня</h4>
+                                <p class="product__footer-p">Двор / Планировка</p>
+                            </div>
+                            <div class="product__footer-right">
+                                <button class="product__circul">></button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="product main__content-left">
+                    <img class="product__img" src="./src/assets/img/item3.png" alt="">
+                    <div class="product__footer">
+                        <div class="product__footer-left">
+                            <h4 class="product__footer-h3">Современная кухня</h4>
+                            <p class="product__footer-p">Двор / Планировка</p>
+                        </div>
+                        <div class="product__footer-right">
+                            <button class="product__circul">></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product main__content-left">
+                    <img class="product__img" src="./src/assets/img/item4.png" alt="">
+                    <div class="product__footer">
+                        <div class="product__footer-left">
+                            <h4 class="product__footer-h3">Современная кухня</h4>
+                            <p class="product__footer-p">Двор / Планировка</p>
+                        </div>
+                        <div class="product__footer-right">
+                            <button class="product__circul">></button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+        <section class="counter container">
+            <main class="counter__conteiner">
+                <div class="counter__single">
+                    <h1 class="counter__h1">12</h1>
+                    <p class="counter__p">Лет опыта</p>
+                </div>
+                <div class="counter__single">
+                    <h1 class="counter__h1">85</h1>
+                    <p class="counter__p">Успешных проектов</p>
+                </div>
+                <div class="counter__single">
+                    <h1 class="counter__h1">15</h1>
+                    <p class="counter__p">Проектов в работе</p>
+                </div>
+                <div class="counter__single">
+                    <h1 class="counter__h1">95</h1>
+                    <p class="counter__p">Счастливых клиентов</p>
+                </div>
+            </main>
+        </section>
+        <section class="news container">
+            <header class="headBlock">
+                <h1 class="headBlock__h1">Статьи & Новости</h1>
+                <p class="headBlock__p">Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы</p>
+            </header>
+            <article class="news__block">
+                <div class="news__conteiner">
+                    <div class="news__img">
+                        <div class="news__img__block">
+                            Дизайн кухни
+                        </div>
+                    </div>
+                    <h3 class="news__h3">Создадим лучший макет перепланировки</h3>
+                    <div class="news__footer">
+                        <p class="news__p">26 Декабря, 2022</p>
+                        <button class="news__btn">></button>
+                    </div>
+                </div>
+            </article>
+            <darticleiv class="news__block">
+                <div class="news__conteiner">
+                    <div class="news__img">
+                        <div class="news__img__block">
+                            Дизайн кухни
+                        </div>
+                    </div>
+                    <h3 class="news__h3">Создадим лучший макет перепланировки</h3>
+                    <div class="news__footer">
+                        <p class="news__p">26 Декабря, 2022</p>
+                        <button class="news__btn">></button>
+                    </div>
+                </div>
+            </darticleiv>
+            <article class="news__block">
+                <div class="news__conteiner">
+                    <div class="news__img">
+                        <div class="news__img__block">
+                            Дизайн кухни
+                        </div>
+                    </div>
+                    <h3 class="news__h3">Создадим лучший макет перепланировки</h3>
+                    <div class="news__footer">
+                        <p class="news__p">26 Декабря, 2022</p>
+                        <button class="news__btn">></button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>     
+    <footer class="center container">
+        <div class="col">
             <div class="logo__logo">
                 <img class="logo__img" src="./src/assets//img/logo.jpg" alt="">
                 <h3 class="logo__h3">Interno</h3>
             </div>
-            <div class="header__right">
-                <a href="#" class="header__a">Домой</a>
-                <a href="#" class="header__a">Проект</a>
-                <a href="#" class="header__a">Блог</a>
-            </div>
-        </header>
-        <main>
-            <div class="banner">
-                <div class="banner__content">
-                    <h2 class="baner__tittle">Пусть ваш дом будет уникальным</h2>
-                    <div class="banner__textContent">Существует много вариаций Lorem Ipsum, которые можно использовать</div>
-                    <button class="banner__btn">Начать<span>-></span></button>
-                    
-                </div>
-            </div>
-            <div class="main__content">
-                <div class="main__content__heading">
-                    <h3 class="main__content__h3">Следите за нашими проектами</h3>
-                    <p class="main__content__p">Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы </p>
-                </div>
-                <div class="main__content__products">
-                    <div class="product main__content-left">
-                        <img class="product__img" src="./src/assets/img/item1.png" alt="">
-                        <div class="product__footer">
-                            <div class="product__footer-left">
-                                <h4 class="product__footer-h3">Современная кухня</h4>
-                                <p class="product__footer-p">Двор / Планировка</p>
-                            </div>
-                            <div class="product__footer-right">
-                                <button class="product__circul">></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product main__content-right">
-                        <div class="product main__content-left">
-                            <img class="product__img" src="./src/assets/img/item2.png" alt="">
-                            <div class="product__footer">
-                                <div class="product__footer-left">
-                                    <h4 class="product__footer-h3">Современная кухня</h4>
-                                    <p class="product__footer-p">Двор / Планировка</p>
-                                </div>
-                                <div class="product__footer-right">
-                                    <button class="product__circul">></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product main__content-left">
-                        <img class="product__img" src="./src/assets/img/item3.png" alt="">
-                        <div class="product__footer">
-                            <div class="product__footer-left">
-                                <h4 class="product__footer-h3">Современная кухня</h4>
-                                <p class="product__footer-p">Двор / Планировка</p>
-                            </div>
-                            <div class="product__footer-right">
-                                <button class="product__circul">></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product main__content-left">
-                        <img class="product__img" src="./src/assets/img/item4.png" alt="">
-                        <div class="product__footer">
-                            <div class="product__footer-left">
-                                <h4 class="product__footer-h3">Современная кухня</h4>
-                                <p class="product__footer-p">Двор / Планировка</p>
-                            </div>
-                            <div class="product__footer-right">
-                                <button class="product__circul">></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="counter">
-                <div class="counter__conteiner">
-                    <div class="counter__single">
-                        <h1 class="counter__h1">12</h1>
-                        <p class="counter__p">Лет опыта</p>
-                    </div>
-                    <div class="counter__single">
-                        <h1 class="counter__h1">85</h1>
-                        <p class="counter__p">Успешных проектов</p>
-                    </div>
-                    <div class="counter__single">
-                        <h1 class="counter__h1">15</h1>
-                        <p class="counter__p">Проектов в работе</p>
-                    </div>
-                    <div class="counter__single">
-                        <h1 class="counter__h1">95</h1>
-                        <p class="counter__p">Счастливых клиентов</p>
-                    </div>
-                </div>
-            </div>
-            <div class="news">
-                <div class="headBlock">
-                    <h1 class="headBlock__h1">Статьи & Новости</h1>
-                    <p class="headBlock__p">Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы</p>
-                </div>
-                <div class="news__block">
-                    <div class="news__conteiner">
-                        <div class="news__img">
-                            <div class="news__img__block">
-                                Дизайн кухни
-                            </div>
-                        </div>
-                        <h3 class="news__h3">Создадим лучший макет перепланировки</h3>
-                        <div class="news__footer">
-                            <p class="news__p">26 Декабря, 2022</p>
-                            <button class="news__btn">></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>     
-        <footer>
-            <div class="col">
-                <div class="logo__logo">
-                    <img class="logo__img" src="./src/assets//img/logo.jpg" alt="">
-                    <h3 class="logo__h3">Interno</h3>
-                </div>
-                Tiwiter
-                in
-            </div>
-            <div class="col">
-                <h3 class="col__h3">Страницы</h3>
-                <a href="#" class="footer__a">Домой</a>
-                <a href="#" class="footer__a">Проект</a>
-                <a href="#" class="footer__a">Блог</a>
-            </div>
-            <div class="col">
-                <h3 class="col__h3">Контакты</h3>
-                <p class="col__p">55 East Birchwood Ave. Brooklyn, New York 11201</p>
-                <p class="col__p">contact@interno.com</p>
-                <p class="col__p">(123) 456 - 7890</p>
-            </div>
-        </footer>
-    </div>
+            Tiwiter
+            in
+        </div>
+        <div class="col">
+            <h3 class="col__h3">Страницы</h3>
+            <a href="#" class="footer__a">Домой</a>
+            <a href="#" class="footer__a">Проект</a>
+            <a href="#" class="footer__a">Блог</a>
+        </div>
+        <div class="col">
+            <h3 class="col__h3">Контакты</h3>
+            <p class="col__p">55 East Birchwood Ave. Brooklyn, New York 11201</p>
+            <p class="col__p">contact@interno.com</p>
+            <p class="col__p">(123) 456 - 7890</p>
+        </div>
+    </footer>
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="mobile-overlay__close-button cross-button" type="submit">
+                <span class="visually-hidden">Закрыть меню</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li v-for="menu in menubar.menuItems" :key="menu.label" class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" :href="menu.href">{{ menu.label }}</a>
+                </li>
+            </ul>
+        </div>
+    </dialog>
    </body>
 </html>

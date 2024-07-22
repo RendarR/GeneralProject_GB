@@ -1,0 +1,14 @@
+.main__content{
+    &__p {
+        text-align: center;
+        width: 400px;
+    }
+    &__h3 {
+        text-align: center;
+    }
+    &__heading {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

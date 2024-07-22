@@ -1,0 +1,28 @@
+// ПЕРЕМЕНННЫЕ В ГЛОБАЛЬНОЙ ОБЛАСТИ
+
+:root {
+    --color-background: #FFFFFF;
+    --color-font-title: #292F36;
+    --color-font-text: #4D5053;
+    --color-font-alt: #CDA274;
+    --color-font-description: #4D5053;
+    --color-border: #E7E7E7;
+    --color-background-alt: #F4F0EC;
+
+    --border: 1px solid var(--color-border);
+    --border-radius: 62px;
+    --border-radius-button: 18px;
+
+    --font-family-title: 'DM Serif Display', sans-serif;
+    --font-family-base: 'Jost', sans-serif;
+
+    --container-width: 1200px;
+    --container-padding-x: 20px;
+
+    --section-padding-y: 48px;
+    --button-height: 75px;
+    --button-arrow-large: 70px;
+    --button-arrow-small: 52px;
+
+    --transition-duration: 0.2s;
+}

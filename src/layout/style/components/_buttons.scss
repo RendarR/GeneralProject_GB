@@ -1,0 +1,18 @@
+.btn__dark{
+    @include flex-center(true);
+    height: var(--button-height);
+    padding-inline: 48px;
+    font-size: 18px;
+    color: var(--color-background);
+    background-color: var(--color-font-title);
+    border: var(--border);
+    border-radius: var(--border-radius-button);
+
+    @include hover {
+        color: var(--color-font-title);
+        background-color: var(--color-font-alt);
+    }
+}
+.btn__dark img {
+    padding-left: 7px;
+  }

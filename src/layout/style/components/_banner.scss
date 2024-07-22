@@ -1,0 +1,28 @@
+// BANNER
+.banner {
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/img/baner.png);
+    background-position: center;
+    background-size: cover;
+    height: 758px;
+    border-radius: var(--button-arrow-large);
+    align-items: center;
+    padding: 52px;
+    @include tablet {
+        height: 600px;
+    }
+
+    @include mobile {
+        height: 400px;
+    }
+    &__tittle {
+        width: 610px;
+        @include tablet {
+            width: 600px;
+        }
+        @include mobile {
+            width: 400px;
+        }
+    }
+}
