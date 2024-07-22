@@ -27,7 +27,7 @@
             <div class="banner__content">
                 <h2 class="banner__tittle">Пусть ваш дом будет уникальным</h2>
                 <div class="banner__textContent">Существует много вариаций Lorem Ipsum, которые можно использовать</div>
-                <button class="btn__dark"><span>Начать</span><img src="./src/assets/img/vector.png" alt=""></button>
+                <button class="btn__dark"><span>Начать</span><img src="./src/assets/img/vector1.png" alt=""></button>
             </div>
         </section>
         <section class="main__content container">
@@ -40,24 +40,24 @@
                     <img class="product__img" src="./src/assets/img/item1.png" alt="">
                     <div class="product__footer">
                         <div class="product__footer-left">
-                            <h4 class="product__footer-h3">Современная кухня</h4>
+                            <h5 class="product__footer-h3">Современная кухня</h5>
                             <p class="product__footer-p">Двор / Планировка</p>
                         </div>
                         <div class="product__footer-right">
-                            <button class="product__circul">></button>
+                            <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
                         </div>
                     </div>
                 </article>
                 <article class="product main__content-right">
-                    <div class="product main__content-left">
+                    <div class="product main__content-right">
                         <img class="product__img" src="./src/assets/img/item2.png" alt="">
                         <div class="product__footer">
-                            <div class="product__footer-left">
-                                <h4 class="product__footer-h3">Современная кухня</h4>
+                            <div class="product__footer-right">
+                                <h5 class="product__footer-h3">Современная кухня</h5>
                                 <p class="product__footer-p">Двор / Планировка</p>
                             </div>
                             <div class="product__footer-right">
-                                <button class="product__circul">></button>
+                                <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
                             </div>
                         </div>
                     </div>
@@ -66,30 +66,30 @@
                     <img class="product__img" src="./src/assets/img/item3.png" alt="">
                     <div class="product__footer">
                         <div class="product__footer-left">
-                            <h4 class="product__footer-h3">Современная кухня</h4>
+                            <h5 class="product__footer-h3">Современная кухня</h5>
                             <p class="product__footer-p">Двор / Планировка</p>
                         </div>
-                        <div class="product__footer-right">
-                            <button class="product__circul">></button>
+                        <div class="product__footer-left">
+                            <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
                         </div>
                     </div>
                 </article>
-                <article class="product main__content-left">
+                <article class="product main__content-right">
                     <img class="product__img" src="./src/assets/img/item4.png" alt="">
                     <div class="product__footer">
-                        <div class="product__footer-left">
-                            <h4 class="product__footer-h3">Современная кухня</h4>
+                        <div class="product__footer-right">
+                            <h5 class="product__footer-h3">Современная кухня</h5>
                             <p class="product__footer-p">Двор / Планировка</p>
                         </div>
                         <div class="product__footer-right">
-                            <button class="product__circul">></button>
+                            <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
                         </div>
                     </div>
                 </article>
             </main>
         </section>
-        <section class="counter container">
-            <main class="counter__conteiner">
+        <section class="counter">
+            <main class="counter__container container">
                 <div class="counter__single">
                     <h1 class="counter__h1">12</h1>
                     <p class="counter__p">Лет опыта</p>
@@ -113,48 +113,75 @@
                 <h1 class="headBlock__h1">Статьи & Новости</h1>
                 <p class="headBlock__p">Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы</p>
             </header>
-            <article class="news__block">
-                <div class="news__conteiner">
-                    <div class="news__img">
-                        <div class="news__img__block">
-                            Дизайн кухни
-                        </div>
-                    </div>
-                    <h3 class="news__h3">Создадим лучший макет перепланировки</h3>
-                    <div class="news__footer">
-                        <p class="news__p">26 Декабря, 2022</p>
-                        <button class="news__btn">></button>
-                    </div>
-                </div>
-            </article>
-            <darticleiv class="news__block">
-                <div class="news__conteiner">
-                    <div class="news__img">
-                        <div class="news__img__block">
-                            Дизайн кухни
-                        </div>
-                    </div>
-                    <h3 class="news__h3">Создадим лучший макет перепланировки</h3>
-                    <div class="news__footer">
-                        <p class="news__p">26 Декабря, 2022</p>
-                        <button class="news__btn">></button>
-                    </div>
-                </div>
-            </darticleiv>
-            <article class="news__block">
-                <div class="news__conteiner">
-                    <div class="news__img">
-                        <div class="news__img__block">
-                            Дизайн кухни
-                        </div>
-                    </div>
-                    <h3 class="news__h3">Создадим лучший макет перепланировки</h3>
-                    <div class="news__footer">
-                        <p class="news__p">26 Декабря, 2022</p>
-                        <button class="news__btn">></button>
-                    </div>
-                </div>
-            </article>
+            <ul class="news__list grid grid--3">
+                <li class="news__item">
+                    <a href="#">
+                        <article class="news-card">
+                            <img class="news-card__image" src="./src/assets/img/news1.png" alt="article" width="340"
+                                height="290" loading="lazy">
+                            <h5 class="news-card__title">Создадим лучший макет перепланировки</h5>
+                            <div class="news-card__body">
+                                <p class="news-card__description">26 Декабрь, 2022</p>
+                                <p class="news-card__link" href="#">
+                                    <span class="link-icon-wrapper">
+                                        <svg width="8" height="18" viewBox="0 0 10.004 20.0082" fill="none">
+                                            <path d="M1 19L9 10L1 1" stroke="currentColor" stroke-opacity="1.000000"
+                                                stroke-width="2.000000" stroke-linejoin="currentColor"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                </p>
+                            </div>
+                            <p class="news-card__category">Дизайн Кухни</p>
+                        </article>
+                    </a>
+                </li>
+                <li class="news__item">
+                    <a href="#">
+                        <article class="news-card">
+                            <img class="news-card__image" src="./src/assets/img/news2.png" alt="article" width="340"
+                                height="290" loading="lazy">
+                            <h5 class="news-card__title">Создадим лучший макет перепланировки</h5>
+                            <div class="news-card__body">
+                                <p class="news-card__description">26 Декабрь, 2022</p>
+                                <p class="news-card__link" href="#">
+                                    <span class="link-icon-wrapper">
+                                        <svg width="8" height="18" viewBox="0 0 10.004 20.0082" fill="none">
+                                            <path d="M1 19L9 10L1 1" stroke="currentColor" stroke-opacity="1.000000"
+                                                stroke-width="2.000000" stroke-linejoin="currentColor"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                </p>
+                            </div>
+                            <p class="news-card__category">Дизайн Кухни</p>
+                        </article>
+                    </a>
+                </li>
+                <li class="news__item">
+                    <a href="#">
+                        <article class="news-card">
+                            <img class="news-card__image" src="./src/assets/img/news3.png" alt="article" width="340"
+                                height="290" loading="lazy">
+                            <h5 class="news-card__title">Создадим лучший макет перепланировки</h5>
+                            <div class="news-card__body">
+                                <p class="news-card__description">26 Декабрь, 2022</p>
+                                <p class="news-card__link" href="#">
+                                    <span class="link-icon-wrapper">
+                                        <svg width="8" height="18" viewBox="0 0 10.004 20.0082" fill="none">
+                                            <path d="M1 19L9 10L1 1" stroke="currentColor" stroke-opacity="1.000000"
+                                                stroke-width="2.000000" stroke-linejoin="currentColor"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                </p>
+                            </div>
+                            <p class="news-card__category">Дизайн Кухни</p>
+                        </article>
+                    </a>
+                </li>
+            </ul>
+
         </section>
     </main>     
     <footer class="center container">

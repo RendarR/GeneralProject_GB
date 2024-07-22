@@ -1,0 +1,23 @@
+.counter {
+    background-color: var(--color-background-alt);
+    padding: 130px 0;
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: var(--section-padding-y);
+    }
+    &__single {
+        width: 292px;
+    }
+    &__single :not(:last-child) {
+            border-right: 1px solid var(--color-font-alt);
+    }
+    &__h1 {
+        color: var(--color-font-alt);
+        text-align: center;
+    }
+    &__p {
+        text-align: center;
+    }
+}
