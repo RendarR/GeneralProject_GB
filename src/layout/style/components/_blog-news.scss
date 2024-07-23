@@ -1,0 +1,19 @@
+.blog__lastnews {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    &__main {
+        display: flex;
+    }
+    &__textcontent {
+        width: 469px;
+        margin-left: 80px;
+    }
+    & footer {
+        display: flex;
+        align-items: flex-end
+    }
+    &__date {
+        margin-bottom: 20px;
+    }
+}

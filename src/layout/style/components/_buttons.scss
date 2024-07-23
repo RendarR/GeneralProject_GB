@@ -33,4 +33,9 @@
             background-color: var(--color-font-alt);
         }
     }
+    &__number {
+        background-color: white;
+        border: 1px solid var(--color-font-alt);
+        margin: 10px;
+    }
 }

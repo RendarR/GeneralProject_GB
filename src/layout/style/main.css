@@ -305,6 +305,11 @@ h5 {
 .btn__circul:hover {
   background-color: var(--color-font-alt);
 }
+.btn__number {
+  background-color: white;
+  border: 1px solid var(--color-font-alt);
+  margin: 10px;
+}
 
 header {
   padding-top: 44px;
@@ -730,16 +735,59 @@ footer {
   padding-left: 90px;
 }
 .blog__head__article {
-  position: relative;
-  top: -150px;
+  position: absolute;
+  top: 190px;
   justify-content: flex-start;
   padding-top: 50px;
   display: flex;
   border-radius: 50px;
-  height: 317px;
-  width: 403px;
+  height: 200px;
+  width: 300px;
   background-color: rgb(255, 255, 255);
   align-items: flex-start;
   flex-direction: column;
   padding-left: 80px;
+}
+@media (min-width: 1024px) {
+  .blog__head__article {
+    top: 230px;
+    height: 170px;
+    width: 395px;
+  }
+}
+@media (min-width: 1281px) {
+  .blog__head__article {
+    top: 235px;
+    height: 250px;
+    width: 395px;
+  }
+}
+
+.blog__lastnews {
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+}
+.blog__lastnews__main {
+  display: flex;
+}
+.blog__lastnews__textcontent {
+  width: 469px;
+  margin-left: 80px;
+}
+.blog__lastnews footer {
+  display: flex;
+  align-items: flex-end;
+}
+.blog__lastnews__date {
+  margin-bottom: 20px;
+}
+
+.blog__news {
+  padding-top: 150px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

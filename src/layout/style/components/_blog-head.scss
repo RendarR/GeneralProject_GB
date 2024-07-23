@@ -8,17 +8,27 @@
         }
     }
     &__head__article{
-        position: relative;
-        top: -150px;
+        position: absolute;
+        top: 190px;
         justify-content: flex-start;
         padding-top: 50px;
         display: flex;
         border-radius: 50px;
-        height: 317px;
-        width: 403px;
+        height: 200px;
+        width: 300px;
         background-color: rgb(255, 255, 255);
         align-items: flex-start;
         flex-direction: column;
         padding-left: 80px;
+        @include tablet-above {
+            top: 230px;
+            height: 170px;
+            width: 395px;
+        }
+        @include desktop-above {
+            top: 235px;
+            height: 250px;
+            width: 395px;
+        }
     }
 }
