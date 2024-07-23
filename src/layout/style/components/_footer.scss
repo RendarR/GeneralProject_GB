@@ -1,0 +1,42 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    @include tablet-above {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    padding-bottom: 40px;
+}
+.footer  {
+    &__a {
+        display: inline-flex;
+        height: 48px;
+    }
+    &__p {
+        display: inline-flex;
+        height: 48px;
+    }
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__block {
+        padding-left: 30px;
+    }
+    &__h3 {
+
+    }
+    &__a {
+
+    }
+}
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}

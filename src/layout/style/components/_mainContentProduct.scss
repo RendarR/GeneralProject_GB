@@ -1,9 +1,11 @@
 .main__content__products {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
     justify-content: center;
     @include desktop-above {
+        flex-direction: row;
         justify-content: space-between;
     }
 }

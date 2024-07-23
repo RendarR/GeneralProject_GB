@@ -302,6 +302,9 @@ h5 {
 .btn__circul img {
   padding-left: 5px;
 }
+.btn__circul:hover {
+  background-color: var(--color-font-alt);
+}
 
 header {
   padding-top: 44px;
@@ -462,12 +465,14 @@ header {
 
 .main__content__products {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
 }
 @media (min-width: 1281px) {
   .main__content__products {
+    flex-direction: row;
     justify-content: space-between;
   }
 }
@@ -675,4 +680,43 @@ header {
   overflow: hidden;
   display: flex;
   justify-content: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__a {
+  display: inline-flex;
+  height: 48px;
+}
+.footer__p {
+  display: inline-flex;
+  height: 48px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.col__block {
+  padding-left: 30px;
+}
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }/*# sourceMappingURL=main.css.map */
