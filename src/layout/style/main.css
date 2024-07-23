@@ -719,4 +719,27 @@ footer {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+}
+
+.blog__head {
+  display: flex;
+  justify-content: center;
+}
+.blog__head__p {
+  width: 100px;
+  padding-left: 90px;
+}
+.blog__head__article {
+  position: relative;
+  top: -150px;
+  justify-content: flex-start;
+  padding-top: 50px;
+  display: flex;
+  border-radius: 50px;
+  height: 317px;
+  width: 403px;
+  background-color: rgb(255, 255, 255);
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 80px;
 }/*# sourceMappingURL=main.css.map */
