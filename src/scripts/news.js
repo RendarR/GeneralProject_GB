@@ -39,12 +39,20 @@ Vue.component('news', {
                 data: '26 Декабрь, 2022',
                 about: 'Дизайн Кухни',
             }
-        ]
-    }
+        ],
+        countNews: '3', 
+    };
+  },
+  computed: {
+    newsCount(){
+        const arrayNews = [...this.news].splice(0,this.countNews)
+        console.log(arrayNews)
+        return  arrayNews;
+    },
   },
   template: `
         <ul class="news__list grid grid--3" >
-            <li class="news__item" v-for="item in news" :key="item.id">
+            <li class="news__item" v-for="item in newsCount" :key="item.id">
                 <a href="#">
                     <article class="news-card">
                         <img class="news-card__image" :src="item.img" alt="article" width="340"
