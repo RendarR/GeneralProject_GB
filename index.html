@@ -6,193 +6,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interno</title>
     <link rel="stylesheet" href="./src/layout/style/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./src/scripts/news.js"></script>
 </head>
-<body>
-    <header class="center container">
-        <a href="#" class="logo__logo">
-            <img class="logo__img" src="./src/assets//img/logo.png" alt="">
-            <h3 class="logo__h3">Interno</h3>
-        </a>
-        <nav class="header__right hidden-mobile">
-            <a href="#" class="header__a header__menu-link">Домой</a>
-            <a href="#" class="header__a">Проект</a>
-            <a href="#" class="header__a">Блог</a>
-        </nav>
-        <button class="header__burger-menu burger-button visible-mobile" type="button">
-            <span class="visually-hidden">Open navigation menu</span>
-        </button>
-    </header>
-    <main class="center">
-        <section class="banner container">
-            <div class="banner__content">
-                <h2 class="banner__tittle">Пусть ваш дом будет уникальным</h2>
-                <div class="banner__textContent">Существует много вариаций Lorem Ipsum, которые можно использовать</div>
-                <button class="btn__dark"><span>Начать</span><img src="./src/assets/img/vector1.png" alt=""></button>
-            </div>
-        </section>
-        <section class="main__content container">
-            <header class="main__content__heading">
-                <h3 class="main__content__h3">Следите за нашими проектами</h3>
-                <p class="main__content__p">Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы </p>
+    <body>
+        <div id="app">
+            <header class="center container">
+                <a href="#" class="logo__logo">
+                    <img class="logo__img" src="./src/assets//img/logo.png" alt="">
+                    <h3 class="logo__h3">Interno</h3>
+                </a>
+                <nav class="header__right hidden-mobile">
+                    <a href="#" class="header__a header__menu-link">Домой</a>
+                    <a href="#" class="header__a">Проект</a>
+                    <a href="#" class="header__a">Блог</a>
+                </nav>
+                <button class="header__burger-menu burger-button visible-mobile" type="button">
+                    <span class="visually-hidden">Open navigation menu</span>
+                </button>
             </header>
-            <main class="main__content__products">
-                <article class="product main__content-left">
-                    <img class="product__img" src="./src/assets/img/item1.png" alt="">
-                    <div class="product__footer">
-                        <div class="product__footer-left">
-                            <h5 class="product__footer-h3">Современная кухня</h5>
-                            <p class="product__footer-p">Двор / Планировка</p>
-                        </div>
-                        <div class="product__footer-right">
-                            <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
-                        </div>
+            <main class="center">
+                <section class="banner container">
+                    <div class="banner__content">
+                        <h2 class="banner__tittle">Пусть ваш дом будет уникальным</h2>
+                        <div class="banner__textContent">Существует много вариаций Lorem Ipsum, которые можно использовать</div>
+                        <button class="btn__dark"><span>Начать</span><img src="./src/assets/img/vector1.png" alt=""></button>
                     </div>
-                </article>
-                <article class="product main__content-right">
-                    <div class="product main__content-right">
-                        <img class="product__img" src="./src/assets/img/item2.png" alt="">
-                        <div class="product__footer">
-                            <div class="product__footer-right">
-                                <h5 class="product__footer-h3">Современная кухня</h5>
-                                <p class="product__footer-p">Двор / Планировка</p>
+                </section>
+                <section class="main__content container">
+                    <header class="main__content__heading">
+                        <h3 class="main__content__h3">Следите за нашими проектами</h3>
+                        <p class="main__content__p">Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы </p>
+                    </header>
+                    <main class="main__content__products">
+                        <article class="product main__content-left">
+                            <img class="product__img" src="./src/assets/img/item1.png" alt="">
+                            <div class="product__footer">
+                                <div class="product__footer-left">
+                                    <h5 class="product__footer-h3">Современная кухня</h5>
+                                    <p class="product__footer-p">Двор / Планировка</p>
+                                </div>
+                                <div class="product__footer-right">
+                                    <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
+                                </div>
                             </div>
-                            <div class="product__footer-right">
-                                <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="product main__content-left">
-                    <img class="product__img" src="./src/assets/img/item3.png" alt="">
-                    <div class="product__footer">
-                        <div class="product__footer-left">
-                            <h5 class="product__footer-h3">Современная кухня</h5>
-                            <p class="product__footer-p">Двор / Планировка</p>
-                        </div>
-                        <div class="product__footer-left">
-                            <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
-                        </div>
-                    </div>
-                </article>
-                <article class="product main__content-right">
-                    <img class="product__img" src="./src/assets/img/item4.png" alt="">
-                    <div class="product__footer">
-                        <div class="product__footer-right">
-                            <h5 class="product__footer-h3">Современная кухня</h5>
-                            <p class="product__footer-p">Двор / Планировка</p>
-                        </div>
-                        <div class="product__footer-right">
-                            <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
-                        </div>
-                    </div>
-                </article>
-            </main>
-        </section>
-        <section class="counter">
-            <main class="counter__container container">
-                <div class="counter__single">
-                    <h1 class="counter__h1">12</h1>
-                    <p class="counter__p">Лет опыта</p>
-                </div>
-                <div class="counter__single">
-                    <h1 class="counter__h1">85</h1>
-                    <p class="counter__p">Успешных проектов</p>
-                </div>
-                <div class="counter__single">
-                    <h1 class="counter__h1">15</h1>
-                    <p class="counter__p">Проектов в работе</p>
-                </div>
-                <div class="counter__single">
-                    <h1 class="counter__h1">95</h1>
-                    <p class="counter__p">Счастливых клиентов</p>
-                </div>
-            </main>
-        </section>
-        <section class="news container">
-            <header class="headBlock">
-                <h1 class="headBlock__h1">Статьи & Новости</h1>
-                <p class="headBlock__p">Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы</p>
-            </header>
-            <ul class="news__list grid grid--3">
-                <li class="news__item">
-                    <a href="#">
-                        <article class="news-card">
-                            <img class="news-card__image" src="./src/assets/img/news1.png" alt="article" width="340"
-                                height="290" loading="lazy">
-                            <h5 class="news-card__title">Создадим лучший макет перепланировки</h5>
-                            <div class="news-card__body">
-                                <p class="news-card__description">26 Декабрь, 2022</p>
-                                <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
-                            </div>
-                            <p class="news-card__category">Дизайн Кухни</p>
                         </article>
-                    </a>
-                </li>
-                <li class="news__item">
-                    <a href="#">
-                        <article class="news-card">
-                            <img class="news-card__image" src="./src/assets/img/news2.png" alt="article" width="340"
-                                height="290" loading="lazy">
-                            <h5 class="news-card__title">Создадим лучший макет перепланировки</h5>
-                            <div class="news-card__body">
-                                <p class="news-card__description">26 Декабрь, 2022</p>
-                                <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
+                        <article class="product main__content-right">
+                            <div class="product main__content-right">
+                                <img class="product__img" src="./src/assets/img/item2.png" alt="">
+                                <div class="product__footer">
+                                    <div class="product__footer-right">
+                                        <h5 class="product__footer-h3">Современная кухня</h5>
+                                        <p class="product__footer-p">Двор / Планировка</p>
+                                    </div>
+                                    <div class="product__footer-right">
+                                        <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="news-card__category">Дизайн Кухни</p>
                         </article>
-                    </a>
-                </li>
-                <li class="news__item">
-                    <a href="#">
-                        <article class="news-card">
-                            <img class="news-card__image" src="./src/assets/img/news3.png" alt="article" width="340"
-                                height="290" loading="lazy">
-                            <h5 class="news-card__title">Создадим лучший макет перепланировки</h5>
-                            <div class="news-card__body">
-                                <p class="news-card__description">26 Декабрь, 2022</p>
-                                <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
+                        <article class="product main__content-left">
+                            <img class="product__img" src="./src/assets/img/item3.png" alt="">
+                            <div class="product__footer">
+                                <div class="product__footer-left">
+                                    <h5 class="product__footer-h3">Современная кухня</h5>
+                                    <p class="product__footer-p">Двор / Планировка</p>
+                                </div>
+                                <div class="product__footer-left">
+                                    <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
+                                </div>
                             </div>
-                            <p class="news-card__category">Дизайн Кухни</p>
                         </article>
-                    </a>
-                </li>
-            </ul>
-
-        </section>
-    </main>     
-    <footer class="center container grid grid--3">
-        <div class="col">
-            <div class="logo__logo">
-                <img class="logo__img" src="./src/assets//img/logo.png" alt="">
-                <h3 class="logo__h3">Interno</h3>
-            </div>
+                        <article class="product main__content-right">
+                            <img class="product__img" src="./src/assets/img/item4.png" alt="">
+                            <div class="product__footer">
+                                <div class="product__footer-right">
+                                    <h5 class="product__footer-h3">Современная кухня</h5>
+                                    <p class="product__footer-p">Двор / Планировка</p>
+                                </div>
+                                <div class="product__footer-right">
+                                    <button class="btn__circul"><img src="./src/assets/img/vector2.png" alt=""></button>
+                                </div>
+                            </div>
+                        </article>
+                    </main>
+                </section>
+                <section class="counter">
+                    <main class="counter__container container">
+                        <div class="counter__single">
+                            <h1 class="counter__h1">12</h1>
+                            <p class="counter__p">Лет опыта</p>
+                        </div>
+                        <div class="counter__single">
+                            <h1 class="counter__h1">85</h1>
+                            <p class="counter__p">Успешных проектов</p>
+                        </div>
+                        <div class="counter__single">
+                            <h1 class="counter__h1">15</h1>
+                            <p class="counter__p">Проектов в работе</p>
+                        </div>
+                        <div class="counter__single">
+                            <h1 class="counter__h1">95</h1>
+                            <p class="counter__p">Счастливых клиентов</p>
+                        </div>
+                    </main>
+                </section>
+                <section class="news container">
+                    <header class="headBlock">
+                        <h1 class="headBlock__h1">Статьи & Новости</h1>
+                        <p class="headBlock__p">Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы</p>
+                    </header>
+                        <news></news>
+                        <!-- VUE component news -->
+                </section>
+            </main>     
+            <footer class="center container grid grid--3">
+                <div class="col">
+                    <div class="logo__logo">
+                        <img class="logo__img" src="./src/assets//img/logo.png" alt="">
+                        <h3 class="logo__h3">Interno</h3>
+                    </div>
+                </div>
+                <div class="col col__block">
+                    <h5 class="col__h3">Страницы</h5>
+                    <a href="#" class="footer__a footer__menu-list">Домой</a>
+                    <a href="#" class="footer__a footer__menu-list">Проект</a>
+                    <a href="#" class="footer__a footer__menu-list">Блог</a>
+                </div>
+                <div class="col col__block">
+                    <h5 class="col__h3 footer__menu-list">Контакты</h5>
+                    <p class="footer__p footer__menu-list">55 East Birchwood Ave. Brooklyn, New York 11201</p>
+                    <p class="footer__p footer__menu-list">contact@interno.com</p>
+                    <p class="footer__p footer__menu-list">(123) 456 - 7890</p>
+                </div>
+            </footer>
+            <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+                <form class="mobile-overlay__close-button-wrapper" method="dialog">
+                    <button class="mobile-overlay__close-button cross-button" type="submit">
+                        <span class="visually-hidden">Закрыть меню</span>
+                    </button>
+                </form>
+                <div class="mobile-overlay__body">
+                    <ul class="mobile-overlay__list">
+                        <!-- <!-- <li v-for="menu in menubar.menuItems" :key="menu.label" class="mobile-overlay__item"> -->
+                            <!-- <a class="mobile-overlay__link" :href="menu.href">{{ menu.label }}</a> -->
+                        <!-- </li> -->
+                    </ul>
+                </div>
+            </dialog>
         </div>
-        <div class="col col__block">
-            <h5 class="col__h3">Страницы</h5>
-            <a href="#" class="footer__a footer__menu-list">Домой</a>
-            <a href="#" class="footer__a footer__menu-list">Проект</a>
-            <a href="#" class="footer__a footer__menu-list">Блог</a>
-        </div>
-        <div class="col col__block">
-            <h5 class="col__h3 footer__menu-list">Контакты</h5>
-            <p class="footer__p footer__menu-list">55 East Birchwood Ave. Brooklyn, New York 11201</p>
-            <p class="footer__p footer__menu-list">contact@interno.com</p>
-            <p class="footer__p footer__menu-list">(123) 456 - 7890</p>
-        </div>
-    </footer>
-    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
-        <form class="mobile-overlay__close-button-wrapper" method="dialog">
-            <button class="mobile-overlay__close-button cross-button" type="submit">
-                <span class="visually-hidden">Закрыть меню</span>
-            </button>
-        </form>
-        <div class="mobile-overlay__body">
-            <ul class="mobile-overlay__list">
-                <li v-for="menu in menubar.menuItems" :key="menu.label" class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" :href="menu.href">{{ menu.label }}</a>
-                </li>
-            </ul>
-        </div>
-    </dialog>
+        <script>
+            // Продолжаем создание макета: реализовать страницу Blog (Домашнее задание 2).
+            // Что мы можем заметить в проекте, что часть "Статьи & Новости" повторяется. Как итог, вам необходимо создать блок “Статьи & Новости” 
+            // с помощью Vue.js, где данные для вёрстки будут храниться в массиве объектов и выводить на страницу с помощью цикла v-for.
+            new Vue({
+                el: '#app',
+                data: {
+    
+                },
+                methods: {
+    
+                },
+                computed: {
+    
+                },
+            })
+        </script>
    </body>
 </html>
