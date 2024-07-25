@@ -1,5 +1,8 @@
 // Основной компонент
 Vue.component('news', {
+    props:{
+        count: 'count'
+    },  
   data() {
     return {
         news: [
@@ -40,12 +43,11 @@ Vue.component('news', {
                 about: 'Дизайн Кухни',
             }
         ],
-        countNews: '3', 
     };
   },
   computed: {
     newsCount(){
-        const arrayNews = [...this.news].splice(0,this.countNews)
+        const arrayNews = [...this.news].splice(0,this.count)
         console.log(arrayNews)
         return  arrayNews;
     },
