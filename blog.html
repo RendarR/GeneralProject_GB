@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/layout/style/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./src/scripts/blog.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header class="center container">
+            <a href="#" class="logo__logo">
+                <img class="logo__img" src="./src/assets//img/logo.png" alt="">
+                <h3 class="logo__h3">Interno</h3>
+            </a>
+            <nav class="header__right hidden-mobile">
+                <a href="#" class="header__a header__menu-link">Домой</a>
+                <a href="#" class="header__a">Проект</a>
+                <a href="#" class="header__a">Блог</a>
+            </nav>
+            <button class="header__burger-menu burger-button visible-mobile" type="button">
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
+        </header>
+    </div>
+    <script>
+
+        new Vue({
+                el: '#app',
+                data: {
+                    countIndex: 3,
+                    countNews: 6,
+                },
+                methods: {
+
+                },
+                computed: {
+
+                },
+            })
+
+    </script>
+</body>
+</html>

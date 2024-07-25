@@ -117,7 +117,7 @@
                         <p class="headBlock__p">Хорошо известно, что читатель будет отвлекаться на читабельный контент страницы</p>
                     </header>
                     
-                        <news :count="3"></news>
+                        <news :count="countIndex"></news>
                         <!-- VUE component news -->
                 </section>
             </main>     
@@ -163,7 +163,8 @@
             new Vue({
                 el: '#app',
                 data: {
-    
+                    countIndex: 3,
+                    countNews: 6,
                 },
                 methods: {
     
